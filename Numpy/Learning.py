@@ -63,7 +63,7 @@ print(arr_2d)
 print(arr_2d[1, 1])
 
 print(arr_2d[0, ])  # get first row
-print(arr_2d[:, 1])  # middle column
+print(arr_2d[:, 1:2])  # middle column
 print(arr_2d[1:, :2])  # both square 4, 5, 8, 9
 print(arr_2d[:2, 1:])  # print 1, 2, 5, 6
 print(arr_2d[1:, 1:])  # print 5,9, 6, 10
@@ -77,3 +77,6 @@ print(arr > 5)  # provide the true and false of value which are greater the 5
 print(arr + arr)  # add
 print(arr - arr)  # minux
 print(arr * arr)  # multiply
+print(arr.sum())  # sum of the array
+print(arr.std())  # std deviation
+print(arr_2d.sum(axis=1))
